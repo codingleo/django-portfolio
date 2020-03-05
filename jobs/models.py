@@ -8,7 +8,7 @@ class Job(models.Model):
     summary = models.CharField(max_length=255)
 
     def __str__(self):
-        pass
+        return self.title
 
     class Meta:
         db_table = 'job'
